@@ -43,6 +43,8 @@ getAllTodos()          // Fetch all todos
 createTodo(todo)       // Add a new todo
 deleteTodoById(id)     // Delete a todo
 searchTodo(query)      // Search todos by keyword
+```
+---
 
 ## 📖 AI Workflow
 { "type": "user", "user": "Add a task for shopping groceries." }
@@ -54,6 +56,7 @@ searchTodo(query)      // Search todos by keyword
 { "type": "observation", "observation": "2" }
 { "type": "output", "output": "Your todo has been added successfully" }
 
+
 ## 🧑‍💻 Project Flow
 flowchart TD
     A[User Prompt] --> B[PLAN]
@@ -61,4 +64,7 @@ flowchart TD
     C --> D[Observation]
     D --> E[OUTPUT]
     E -->|Loop| A
+
+##
+<img width="1364" height="421" alt="Screenshot 2025-08-28 000156" src="https://github.com/user-attachments/assets/d5e8c4c7-e8eb-462e-a60f-3f777b1959e0" />
 
