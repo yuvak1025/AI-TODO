@@ -37,3 +37,28 @@ todosTable {
   created_at  DateTime
   updated_at  DateTime
 }
+
+## ⚙️ Available Tools
+getAllTodos()          // Fetch all todos
+createTodo(todo)       // Add a new todo
+deleteTodoById(id)     // Delete a todo
+searchTodo(query)      // Search todos by keyword
+
+## 📖 AI Workflow
+{ "type": "user", "user": "Add a task for shopping groceries." }
+{ "type": "plan", "plan": "I will try to get more context on what user needs to shop." }
+{ "type": "output", "output": "Can you tell me what all items you want to shop for?" }
+{ "type": "user", "user": "I want to shop for milk, kurkure, lays and choco." }
+{ "type": "plan", "plan": "I will use createTodo to create a new Todo in DB." }
+{ "type": "action", "function": "createTodo", "input": "Shopping for milk, kurkure, lays and choco." }
+{ "type": "observation", "observation": "2" }
+{ "type": "output", "output": "Your todo has been added successfully" }
+
+## 🧑‍💻 Project Flow
+flowchart TD
+    A[User Prompt] --> B[PLAN]
+    B --> C[ACTION]
+    C --> D[Observation]
+    D --> E[OUTPUT]
+    E -->|Loop| A
+
